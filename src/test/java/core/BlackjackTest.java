@@ -1,5 +1,10 @@
 package core;
 
-public class BlackjackTest {
+import junit.framework.TestCase;
+
+
+public class BlackjackTest extends TestCase {
+	
+	
 
 }
