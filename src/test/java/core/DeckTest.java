@@ -5,8 +5,8 @@ import junit.framework.TestCase;
 
 public class DeckTest extends TestCase{
 	
-	public void testCreateFullDeck(){
-		DeckCreator deck = new DeckCreator;
+	public void testDeckCreator(){
+		Deck fulldeck = new Deck();
 		
 		assertEquals(52, 52);
 	}
