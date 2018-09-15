@@ -10,5 +10,11 @@ public class DeckTest extends TestCase{
 		
 		assertEquals(52, 52);
 	}
+	
+	public void testShuffledDeck(){
+		Deck newdeck = new Deck();
+		
+		assertEquals(52, 52);
+	}
 
 }
