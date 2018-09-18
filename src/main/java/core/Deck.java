@@ -45,5 +45,23 @@ public class Deck {
 		this.cards = tmpDeck;
 	}	
 			
+	
+	//Remove a card from the deck
+	public void removeCard(int i){
+		this.cards.remove(i);
+	}
+	//Get card from deck
+	public Card getCard(int i){
+		return this.cards.get(i);
+	}
+		
+	//Draw a top card from deck
+	public void draw(Deck comingFrom){
+		//Add card to this deck from whatever deck its coming from
+		this.cards.add(comingFrom.getCard(0));
+		//Remove the card in the deck its coming from
+		comingFrom.removeCard(0);
+	}
+		
 		
 }
