@@ -1,22 +1,17 @@
 package core;
 
-import junit.framework.TestCase;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
 
-public class DeckTest extends TestCase{
+public class DeckTest {
 	
-	public void testDeckCreator(){
-		Deck solver = new Deck();
-		
-		assertEquals(52, solver.DeckCreator(52));
+	@Test
+	public void createFullDeckTest()
+	{
+		Deck deck = new Deck();
+		assertEquals(52, deck.createFullDeck());
 	}
-	
-	public void testShuffle(){
-		Deck solver = new Deck();
-		
-		assertEquals(52, solver.shuffle(52));
-	}
-	
 	
 
 }
