@@ -28,4 +28,17 @@ public class BlackjackTest {
 	}
 	
 
+	@Test
+	public void topCardOnlyTest()
+	{
+		Blackjack dealerCards = new Blackjack();
+		dealerCards.addCard(SEVEN);
+		dealerCards.addCard(A);
+		dealerCards.addCard(J);
+
+		assertEquals("7 X X", dealerCards.topCardOnlyTest());
+	}
+	
+	
+	
 }
