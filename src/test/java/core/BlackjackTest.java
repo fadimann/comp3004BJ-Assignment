@@ -36,7 +36,7 @@ public class BlackjackTest {
 		dealerCards.addCard(A);
 		dealerCards.addCard(J);
 
-		assertEquals("7 X X", dealerCards.topCardOnlyTest());
+		assertEquals("SEVEN X X", dealerCards.topCardOnlyTest());
 	}
 	
 	
