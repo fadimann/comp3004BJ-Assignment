@@ -5,7 +5,7 @@ import org.junit.Test;
 import core.Deck;
 
 
-public class DeckTest extends testCase{
+public class DeckTest{
 	
 	@Test
 	public void createFullDeckTest()

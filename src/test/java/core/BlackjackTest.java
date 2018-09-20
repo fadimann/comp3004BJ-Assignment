@@ -16,17 +16,6 @@ public class BlackjackTest {
 		assertEquals(1 , playerCards.toString());
 	}
 	
-	@Test
-	public void toStringTest()
-	{
-		Blackjack playerCards = new Blackjack();
-		playerCards.addCard(SEVEN);
-		playerCards.addCard(A);
-		playerCards.addCard(J);
-
-		assertEquals("SEVEN A J", playerCards.toString());
-	}
-	
 
 	@Test
 	public void topCardOnlyTest()

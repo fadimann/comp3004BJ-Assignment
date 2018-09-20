@@ -2,23 +2,13 @@ package core;
 
 public class Card {
 	
-	private Suit suit;
-    private Value value;
-
-    public Card(Suit suit, Value value){
-    	this.suit = suit;
-    	this.value = value;
-    	
-    }
-
-    public String toString(){
-    	return this.suit.toString() + this.value.toString();
-    	
-    }
-
-    public Value getValue(){
-    	return this.value;
-    	
-    }
+	private Suit mySuit;
+	private int myNumber;
+	
+	public Card(Suit aSuit, int aNumber){
+		this.mySuit = aSuit;
+		this.myNumber = aNumber;
+	}
+	
 
 }
