@@ -103,9 +103,6 @@ public class Blackjack {
 				System.out.println("Dealer wins.");
 			}
 
-			//End of hand - put cards back in deck
-			playerCards.moveAllToDeck(playingDeck);
-			dealerCards.moveAllToDeck(playingDeck);
 			System.out.println("End of Hand.");
 			
 		}
