@@ -8,6 +8,10 @@ public class Deck {
     private Card[] myCards;
     private int numCards;
     
+    public Deck(){
+    	this(1, false);
+    }
+    
     public Deck(int numDecks, boolean shuffle){
     	this.numCards = 52;
     	this.myCards = new Card[this.numCards];

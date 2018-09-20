@@ -64,7 +64,15 @@ public class DeckTest{
 
 		assertEquals(30, dealerHand.getTotalHandValue());
 	}
+	
+	@Test
+	public void shuffle()
+	{
+		Deck numCards = new Deck();
 
-
+		assertEquals(52, myCards.numCards());
+	}
+	
+	
 	
 }
