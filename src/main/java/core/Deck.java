@@ -11,8 +11,24 @@ public class Deck {
     public Deck(int numDecks, boolean shuffle){
     	this.numCards = 52;
     	this.myCards = new Card[this.numCards];
-    }
+    
 	
-
+    int c = 0;
+    for(int d = 0; d < 52; d++){
+    	for(int s = 0; s < 4; s++){
+    		for(int n = 1; n<= 13; n++){
+    			this.myCards[c] = new Card(Suit.values()[s], n);
+    			c++;
+    		}
+    	}
+    }
+    
+    }
 }
+ 
+
+    	
+    
+
+
 		

@@ -8,10 +8,10 @@ import core.Deck;
 public class DeckTest{
 	
 	@Test
-	public void createFullDeckTest()
+	public void DeckTest()
 	{
 		Deck deck = new Deck();
-		assertEquals(52, deck.createFullDeck());
+		assertEquals(52, deck.myCards());
 	}
 	
 	@Test
