@@ -28,7 +28,7 @@ public class DeckTest{
 	}
 	
 	@Test
-	public void getCard()
+	public void getCardTest()
 	{
 		Deck playerHand = new Deck();
 		int deckSize = 52;
@@ -36,7 +36,7 @@ public class DeckTest{
 		assertNotSame(deckSize, deckSize - 1);
 	}
 	@Test
-	public void addCard()
+	public void addCardTest()
 	{
 		Deck playerHand = new Deck();
 		playerHand.addCard(J);
@@ -47,7 +47,7 @@ public class DeckTest{
 	}
 	
 	@Test
-	public void getCard()
+	public void getCardTest()
 	{
 		Deck dealerHand = new Deck();
 		int deckSize = 52;
@@ -55,7 +55,7 @@ public class DeckTest{
 		assertNotSame(deckSize, deckSize - 1);
 	}
 	@Test
-	public void addCard()
+	public void addCardTest()
 	{
 		Deck dealerHand = new Deck();
 		dealerHand.addCard(J);
@@ -66,13 +66,20 @@ public class DeckTest{
 	}
 	
 	@Test
-	public void shuffle()
+	public void shuffleTest()
 	{
 		Deck numCards = new Deck();
 
 		assertEquals(52, myCards.numCards());
 	}
 	
+	@Test
+	public void dealNextCardTest()
+	{
+		Deck removecard = new Deck();
+	
+		assertNotSame(removecard, numCards);
+	}
 	
 	
 }

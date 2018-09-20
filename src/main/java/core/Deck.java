@@ -40,7 +40,7 @@ public class Deck {
     	Card temp;
     	
     	int j;
-    	for(int i = 0; this.numCards; i++){
+    	for(int i = 0; i < this.numCards; i++){
     		j = rng.nextInt(this.numCards);
     		
     		temp = this.myCards[i];
@@ -48,6 +48,8 @@ public class Deck {
     		this.myCards[j] = temp;
     	}
     }
+
+    
 }
  
 
