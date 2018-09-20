@@ -14,5 +14,41 @@ public class CardTest {
 
 		assertEquals("2", playerCards.toString(Two));
 	}
+	
+	@Test
+	public void Card()
+	{
+		Card aNumber = new Card();
 
+		assertEquals("aNumber", aNumber.Card(11));
+	}
+	@Test
+	public void Card()
+	{
+		Card aNumber = new Card();
+
+		assertEquals("aNumber", aNumber.Card(10));
+	}
+	@Test
+	public void Card()
+	{
+		Card aNumber = new Card();
+
+		assertEquals("aNumber", aNumber.Card(5));
+	}
+	@Test
+	public void Card()
+	{
+		Card aNumber = new Card();
+
+		assertEquals("aNumber", aNumber.Card(3));
+	}
+	@Test
+	public void Card()
+	{
+		Card aNumber = new Card();
+
+		assertEquals("aNumber", aNumber.Card(7));
+	}
+	
 }

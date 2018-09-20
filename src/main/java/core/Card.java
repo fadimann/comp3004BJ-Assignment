@@ -7,6 +7,8 @@ public class Card {
 	
 	public Card(Suit aSuit, int aNumber){
 		this.mySuit = aSuit;
+		
+		
 		this.myNumber = aNumber;
 	}
 	
@@ -16,7 +18,7 @@ public class Card {
 	
 	public String toString(){
 		
-		String numStr;
+		String numStr = "Error";
 		
 		switch(this.myNumber){
 
@@ -68,11 +70,13 @@ public class Card {
 			numStr = "King";
 			break;
 			
-		case 14:
+		case 1:
 			numStr = "Ace";
 			break;
 		
 		}
+		
+		return numStr + mySuit.toString();
 		
 	}
 	
