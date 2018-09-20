@@ -13,4 +13,13 @@ public class Player {
 		
 		this.emptyHand();
 	}
+	
+	public void emptyHand(){
+		for(int c = 0; c<10; c++){
+			this.hand[c] = null;
+		}
+		this.numCards = 0;
+	}
+
+	
 }

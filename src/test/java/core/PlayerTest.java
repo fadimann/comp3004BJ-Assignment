@@ -14,4 +14,11 @@ public class PlayerTest {
 		assertNull(hand);
 	}
 	
+	@Test
+	public void addCardTest()
+	{
+		Player aCard = new Player();
+		assertTrue(aCard);
+	}
+	
 }
