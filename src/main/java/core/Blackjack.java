@@ -6,7 +6,10 @@ public class Blackjack {
 
 	public static void main(String[] args){
 		
-		System.out.println("Welcome to Blackjack!");
+		System.out.println("Welcome to Blackjack!\n");
+		
+		System.out.println("Would you like to play in console (c) or file (f) input?\n");
+		
 		boolean endRound = false;
 		
 		//playingDeck will be the deck the dealer holds
