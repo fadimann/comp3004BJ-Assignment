@@ -21,5 +21,18 @@ public class Player {
 		this.numCards = 0;
 	}
 
+	public boolean addCard(Card aCard){
+		if(this.numCards == 10){
+			System.err.printf("%s's hand already has 10 cards;" +
+		"Cannot add another\n", this.name);
+			System.exit(1);
+		}
+		this.hand[this.numCards] = aCard;
+		this.numCards++;
+		
+		return (this.getHandSum() <= 21);
+	}
+	
+	
 	
 }

@@ -21,4 +21,12 @@ public class PlayerTest {
 		assertTrue(aCard);
 	}
 	
+	@Test
+	public void getHandSumTest()
+	{
+		Player getHand = new Player();
+		assertTrue(getHand);
+		assertEqual(21, getHand());
+	}
+	
 }
