@@ -27,6 +27,26 @@ public class Deck {
     	}
     }
     
+    if (shuffle){
+    	this.shuffle();
+    }
+    
+    }
+
+
+    public void shuffle(){
+    	Random rng = new Random();
+    	
+    	Card temp;
+    	
+    	int j;
+    	for(int i = 0; this.numCards; i++){
+    		j = rng.nextInt(this.numCards);
+    		
+    		temp = this.myCards[i];
+    		this.myCards[i] = this.myCards[j];
+    		this.myCards[j] = temp;
+    	}
     }
 }
  
